@@ -22,7 +22,7 @@ cursor.execute('''CREATE TABLE Книги (
 )''')
 
 # Чтение данных из CSV файла и вставка их в таблицу Книги
-with open('Задача3_Книги.csv', 'r', newline='', encoding='cp1251') as file:
+with open('БД_Книги.csv', 'r', newline='', encoding='cp1251') as file:
     reader = csv.reader(file, delimiter=';')
     next(reader)  # Пропуск заголовка
     for row in reader:
@@ -45,7 +45,7 @@ cursor.execute('''CREATE TABLE Выдача (
 )''')
 
 # Чтение данных из CSV файла и вставка их в таблицу Выдача
-with open('Задача3_Выдачи книг.csv', 'r', newline='', encoding='cp1251') as file:
+with open('БД_Выдачи_книг.csv', 'r', newline='', encoding='cp1251') as file:
     reader = csv.reader(file, delimiter=';')
     next(reader)  # Пропуск заголовка
     for row in reader:
@@ -66,7 +66,7 @@ cursor.execute('''CREATE TABLE Читатели (
 )''')
 
 # Чтение данных из CSV файла и вставка их в таблицу Читатели
-with open('Задача3_Читатели.csv', 'r', newline='', encoding='cp1251') as file:
+with open('БД_Читатели.csv', 'r', newline='', encoding='cp1251') as file:
     reader = csv.reader(file, delimiter=';')
     next(reader)  # Пропуск заголовка
     for row in reader:
