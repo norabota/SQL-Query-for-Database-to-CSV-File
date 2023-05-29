@@ -1,0 +1,1 @@
+# SQL-Query-for-Database-to-CSV-File
